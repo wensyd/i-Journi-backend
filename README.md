@@ -12,7 +12,7 @@ I-Journi is a journal application with a masonite backend. The backend has an in
     table.increments("id")
     table.string("date")
     table.string("title")
-    table.string("body")
+    table.string("body", length= 3000)
     table.timestamps()
 }
 

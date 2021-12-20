@@ -12,7 +12,7 @@ class CreateEntriesTable(Migration):
             table.increments("id")
             table.string("date")
             table.string("title")
-            table.string("body")
+            table.string("body", length= 3000)
             table.timestamps()
 
     def down(self):
